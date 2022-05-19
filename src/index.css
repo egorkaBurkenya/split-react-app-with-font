@@ -1,0 +1,206 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* ! Переменные основных цветов -- желательно использовать их */
+:root {
+	--primary: #0099FF;
+    --secondary: #D0D5F7;
+    --divider: #E2E7EC;
+    --headline: #000033;
+    --paragraph: #465868;
+    --label: #B6CEEB;
+    --on-click-color: #0076C5;
+    --bg-website: #F8F8F8;
+	--bg-blue: #D3F0F7;
+	--bg-white: #FFFFFF;
+	--bg-dark: #01090D;
+    --linear: linear-gradient(265.7deg, #0099FF 3.96%, #52B9FE 116.26%);
+  }
+
+@font-face {
+	font-family: 'Benzin';
+	font-display: swap;
+	src: url("./fonts/Benzin-Regular.eot");
+	src: local("O"), 
+    url("./fonts/Benzin-Regular.woff") format("woff"), 
+    url("./fonts/Benzin-Regular.svg") format("svg"), 
+    url("./fonts/benzin-regular.ttf") format("truetype"),
+		url("./fonts/Benzin-Regular.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Benzin';
+	font-display: swap;
+	src: url("./fonts/Benzin-Bold.eot");
+	src: local("O"), 
+    url("./fonts/Benzin-Bold.woff") format("woff"), 
+    url("./fonts/Benzin-Bold.svg") format("svg"), 
+    url("./fonts/benzin-bold.ttf") format("truetype"),
+		url("./fonts/Benzin-Bold.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Benzin';
+	font-display: swap;
+	src: url("./fonts/Benzin-Semibold.eot");
+	src: local("O"), 
+    url("./fonts/Benzin-Semibold.woff") format("woff"), 
+    url("./fonts/Benzin-Semibold.svg") format("svg"), 
+    url("./fonts/benzin-semibold.ttf") format("truetype"),
+		url("./fonts/Benzin-Semibold.woff2") format("woff2");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Benzin';
+	font-display: swap;
+	src: url("./fonts/Benzin-Medium.eot");
+	src: local("O"), 
+    url("./fonts/Benzin-Medium.woff") format("woff"), 
+    url("./fonts/Benzin-Medium.svg") format("svg"), 
+    url("./fonts/benzin-medium.ttf") format("truetype"),
+		url("./fonts/Benzin-Medium.woff2") format("woff2");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Benzin';
+	font-display: swap;
+	src: url("./fonts/Benzin-Medium.eot");
+	src: local("O"), 
+    url("./fonts/Benzin-Medium.woff") format("woff"), 
+    url("./fonts/Benzin-Medium.svg") format("svg"), 
+    url("./fonts/benzin-medium.ttf") format("truetype"),
+		url("./fonts/Benzin-Medium.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gramatika';
+	font-display: swap;
+	src: url("./fonts/GramatikaTrial-Bold.eot");
+	src: local("O"), 
+    url("./fonts/GramatikaTrial-Bold.woff") format("woff"), 
+    url("./fonts/GramatikaTrial-Bold.otf") format("otf"), 
+    url("./fonts/GramatikaTrial-Bold.svg") format("svg"), 
+    url("./fonts/GramatikaTrial-Bold.ttf") format("truetype"),
+		url("./fonts/GramatikaTrial-Bold.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gramatika';
+	font-display: swap;
+	src: url("./fonts/GramatikaTrial-BoldItalic.eot");
+	src: local("O"), 
+    url("./fonts/GramatikaTrial-BoldItalic.woff") format("woff"), 
+    url("./fonts/GramatikaTrial-BoldItalic.otf") format("otf"), 
+    url("./fonts/GramatikaTrial-BoldItalic.svg") format("svg"), 
+    url("./fonts/GramatikaTrial-BoldItalic.ttf") format("truetype"),
+		url("./fonts/GramatikaTrial-BoldItalic.woff2") format("woff2");
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Gramatika';
+	font-display: swap;
+	src: url("./fonts/GramatikaTrial-Italic.eot");
+	src: local("O"), 
+    url("./fonts/GramatikaTrial-Italic.woff") format("woff"), 
+    url("./fonts/GramatikaTrial-Italic.otf") format("otf"), 
+    url("./fonts/GramatikaTrial-Italic.svg") format("svg"), 
+    url("./fonts/GramatikaTrial-Italic.ttf") format("truetype"),
+		url("./fonts/GramatikaTrial-Italic.woff2") format("woff2");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Gramatika';
+	font-display: swap;
+	src: url("./fonts/GramatikaTrial-Light.eot");
+	src: local("O"), 
+    url("./fonts/GramatikaTrial-Light.woff") format("woff"), 
+    url("./fonts/GramatikaTrial-Light.otf") format("otf"), 
+    url("./fonts/GramatikaTrial-Light.svg") format("svg"), 
+    url("./fonts/GramatikaTrial-Light.ttf") format("truetype"),
+		url("./fonts/GramatikaTrial-Light.woff2") format("woff2");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gramatika';
+	font-display: swap;
+	src: url("./fonts/GramatikaTrial-LightItalic.eot");
+	src: local("O"), 
+    url("./fonts/GramatikaTrial-LightItalic.woff") format("woff"), 
+    url("./fonts/GramatikaTrial-LightItalic.otf") format("otf"), 
+    url("./fonts/GramatikaTrial-LightItalic.svg") format("svg"), 
+    url("./fonts/GramatikaTrial-LightItalic.ttf") format("truetype"),
+		url("./fonts/GramatikaTrial-LightItalic.woff2") format("woff2");
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Gramatika';
+	font-display: swap;
+	src: url("./fonts/GramatikaTrial-Medium.eot");
+	src: local("O"), 
+    url("./fonts/GramatikaTrial-Medium.woff") format("woff"), 
+    url("./fonts/GramatikaTrial-Medium.otf") format("otf"), 
+    url("./fonts/GramatikaTrial-Medium.svg") format("svg"), 
+    url("./fonts/GramatikaTrial-Medium.ttf") format("truetype"),
+		url("./fonts/GramatikaTrial-Medium.woff2") format("woff2");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gramatika';
+	font-display: swap;
+	src: url("./fonts/GramatikaTrial-MediumItalic.eot");
+	src: local("O"), 
+    url("./fonts/GramatikaTrial-MediumItalic.woff") format("woff"), 
+    url("./fonts/GramatikaTrial-MediumItalic.otf") format("otf"), 
+    url("./fonts/GramatikaTrial-MediumItalic.svg") format("svg"), 
+    url("./fonts/GramatikaTrial-MediumItalic.ttf") format("truetype"),
+		url("./fonts/GramatikaTrial-MediumItalic.woff2") format("woff2");
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Gramatika';
+	font-display: swap;
+	src: url("./fonts/GramatikaTrial-Regular.eot");
+	src: local("O"), 
+    url("./fonts/GramatikaTrial-Regular.woff") format("woff"), 
+    url("./fonts/GramatikaTrial-Regular.otf") format("otf"), 
+    url("./fonts/GramatikaTrial-Regular.svg") format("svg"), 
+    url("./fonts/GramatikaTrial-Regular.ttf") format("truetype"),
+		url("./fonts/GramatikaTrial-Regular.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
